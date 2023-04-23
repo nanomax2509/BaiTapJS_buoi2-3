@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTapJS</title>
+    <!-- LINK FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- link BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body class="text-center">
+        <!-- Bài 1: Tính tiền lương nhân viên -->
+    <div class="container d-flex justify-content-center w-50">
+        <div class="bai1">
+            <h2>Tính tiền lương nhân viên</h2>
+            <form action="">
+                <input class="d-block my-3 w-100" type="number" name="" id="bai1Luong" placeholder="Nhập lương một ngày">
+                <input class="d-block my-3 w-100" type="number" id="bai1NgayLam" placeholder="Số ngày làm">
+                <button class="btn btn-primary" type="button" id="bai1TinhLuong">Tính Lương</button>
+                <p class="bg-primary py-2 mt-3"><i class="fa fa-hand-point-right text-warning "></i> <span class="text-white" id="bai1HienThi"></span></p>
+            </form>
+        </div>
+    </div>
+
+        <!-- Bài 2: Tính giá trị trung bình  -->
+    <div class="container d-flex justify-content-center mt-5 w-50">
+        <div class="bai2 ">
+            <h2>Tính giá trị trung bình</h2>
+            <form action="">
+                <input class="d-block my-3 w-100" type="number" name="" id="bai2Num1" placeholder="Nhập số thứ 1">
+                <input class="d-block  my-3 w-100" type="number" name="" id="bai2Num2" placeholder="Nhập số thứ 2">
+                <input class="d-block my-3 w-100" type="number" name="" id="bai2Num3" placeholder="Nhập số thứ 3">
+                <input class="d-block  my-3 w-100" type="number" name="" id="bai2Num4" placeholder="Nhập số thứ 4">
+                <input class="d-block  my-3 w-100" type="number" name="" id="bai2Num5" placeholder="Nhập số thứ 5">
+                <button class="btn btn-primary " type="button" id="bai2Tinh">Tính trung bình</button>
+                <p class="bg-primary py-2 mt-3"><i class="fa fa-hand-point-right text-warning "></i> <span class="text-white" id="bai2HienThi"></span></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bài 3: Quy đổi tiền -->
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="bai3">
+            <h2 class="d-block">Quy đổi tiền</h2>
+            <form action="">
+                <input class="my-3 w-100" type="number" name="" id="bai4Tien" placeholder="Nhập số tiền USD">
+            <button type="button" class="btn btn-primary " id="bai3QuyDoi">Quy đổi tiền</button>
+            <p class="bg-primary py-2 mt-3"><i class="fa fa-hand-point-right text-warning "></i> <span class="text-white" id="bai3HienThi"></span></p>
+            </form>
+        </div>
+    </div>
+    <!-- Bài 4: Tính diện tích, chu vi hình chữ nhật -->
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="bai4">
+            <h2>Tính diện tích, chu vi hình chữ nhật</h2>
+            <input class="w-100 mb-3" type="number" name="" placeholder="Nhập vào chiều dài" id="bai4Dai">
+            <input class="w-100 mb-3" type="number" name="" placeholder="Nhập vào chiều rộng" id="bai4Rong">
+            <button class="btn btn-primary " id="bai4Tinh">Tính</button>
+            <p class="bg-primary py-2 mt-3"><i class="fa fa-hand-point-right text-warning "></i> <span class="text-white" id="bai4HienThi"></span></p>
+        </div>
+    </div>
+    <!-- Bài 5: Tính tổng 2 ký số -->
+    <div class="container d-flex justify-content-center mt-5">
+            <div class="bai5">
+                <h2>Tính tổng 2 ký số</h2>
+                <input class="w-100 mb-3" type="number" placeholder="Nhập số có 2 chữ số" name="" id="bai5KiSo">
+                <button class="btn btn-primary " id="bai5Tinh">Tính tổng</button>
+                <p class="bg-primary py-2 mt-3"><i class="fa fa-hand-point-right text-warning "></i> <span class="text-white" id="bai5HienThi"></span></p>
+            </div>
+    </div>
+    <!-- BS4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <!-- bài: 1 -->
+        <script src="./js/bai1.js"></script>
+        <!-- bài: 2 -->
+        <script src="./js/bai2.js"></script>
+        <!-- bài: 3 -->
+        <script src="./js/bai3.js"></script>
+        <!-- bài: 4 -->
+        <script src="./js/bai4.js"></script>
+        <!-- bài: 5 -->
+        <script src="./js/bai5.js"></script>
+</body>
+
+</html>
